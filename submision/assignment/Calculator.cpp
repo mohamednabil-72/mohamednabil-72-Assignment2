@@ -27,9 +27,13 @@ int main() {
             cout << "Result: " << num1 * num2 << endl;
             break;
 
-        case '/':
-            cout << "Result: " << num1 / num2 << endl;
-            break;
+       case '/':
+    if (num2 == 0) {
+        cout << "Error: Cannot divide by zero." << endl;
+    } else {
+        cout << "Result: " << num1 / num2 << endl;
+    }
+    break;
 
         default:
             cout << "Invalid operation." << endl;
